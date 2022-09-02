@@ -14,7 +14,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/bleednose"
+            android:id="@+id/firstburn"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@drawable/theback">
@@ -22,8 +22,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/blood"/>
+
+                android:src="@drawable/ointment"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,15 +32,15 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="نزيف الأنف"
+                android:text="حروق من
+                الدرجة الاولى"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/bruises"
+            android:id="@+id/secondburn"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="15dp"
@@ -50,7 +50,7 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:padding="15dp"
-                android:src="@drawable/bruises"/>
+                android:src="@drawable/burn"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -59,14 +59,14 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الكدمات"
+                android:text="حروق من
+                الدرجة الثانية"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
         <RelativeLayout
-            android:id="@+id/woundsss"
+            android:id="@+id/thirdburn"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="15dp"
@@ -76,7 +76,7 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:padding="15dp"
-                android:src="@drawable/wound"/>
+                android:src="@drawable/hand"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -85,8 +85,34 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الجروح"
+                android:text="الحروق من
+                الدرجة الثالثة"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/wrong"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/theback">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/wronng"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/ar"
+                android:padding="30dp"
+                android:text="اخطاء شائعة"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 

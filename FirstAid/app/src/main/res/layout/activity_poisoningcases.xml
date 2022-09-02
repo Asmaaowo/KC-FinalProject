@@ -14,7 +14,7 @@
 
 
         <RelativeLayout
-            android:id="@+id/bleednose"
+            android:id="@+id/pois"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@drawable/theback">
@@ -23,7 +23,7 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:padding="15dp"
-                android:src="@drawable/blood"/>
+                android:src="@drawable/poisonous"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,14 +33,14 @@
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/ar"
                 android:padding="25dp"
-                android:text="نزيف الأنف"
+                android:text="تسمم غذائي"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/bruises"
+            android:id="@+id/kemai"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="15dp"
@@ -50,7 +50,7 @@
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:padding="15dp"
-                android:src="@drawable/bruises"/>
+                android:src="@drawable/drugs"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -59,38 +59,14 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الكدمات"
+                android:padding="2dp"
+                android:text="تسمم
+                 كيميائي"
                 android:textSize="40sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/woundsss"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/theback">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/wound"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الجروح"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
     </LinearLayout>
 
 </ScrollView>
