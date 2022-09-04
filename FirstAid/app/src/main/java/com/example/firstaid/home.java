@@ -9,11 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import java.net.URI;
-
-import kotlin.LateinitKt;
-
-public class home extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +38,7 @@ public class home extends AppCompatActivity {
         wounds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, woundss.class);
+                Intent intent = new Intent(Home.this, Woundss.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +46,7 @@ public class home extends AppCompatActivity {
         burn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, burns.class);
+                Intent intent = new Intent(Home.this, Burns.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +54,7 @@ public class home extends AppCompatActivity {
         broken.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, brokenbones.class);
+                Intent intent = new Intent(Home.this, Brokenbones.class);
                 startActivity(intent);
             }
         });
@@ -66,7 +62,7 @@ public class home extends AppCompatActivity {
         choking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, choking.class);
+                Intent intent = new Intent(Home.this, Choking.class);
                 startActivity(intent);
             }
         });
@@ -74,7 +70,7 @@ public class home extends AppCompatActivity {
         poison.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, poisoningcases.class);
+                Intent intent = new Intent(Home.this, Poisoningcases.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +78,7 @@ public class home extends AppCompatActivity {
         forcaa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(home.this, forcardiopulmonaryresuscitation.class);
+                Intent intent = new Intent(Home.this, Forcardiopulmonaryresuscitation.class);
                 startActivity(intent);
             }
         });

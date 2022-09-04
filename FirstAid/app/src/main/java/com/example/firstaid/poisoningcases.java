@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class poisoningcases extends AppCompatActivity {
+public class Poisoningcases extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

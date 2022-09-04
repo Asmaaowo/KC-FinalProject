@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class forcardiopulmonaryresuscitation extends AppCompatActivity {
+public class Forcardiopulmonaryresuscitation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

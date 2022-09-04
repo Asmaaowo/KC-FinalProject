@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.firstaid">
+    package="com.example.firstaid" >
 
     <application
         android:allowBackup="true"
@@ -12,35 +12,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAid"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".firstwounds"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".brokenbones"
+            android:name=".Brokenbones"
             android:exported="false" />
         <activity
-            android:name=".choking"
+            android:name=".Choking"
             android:exported="false" />
         <activity
-            android:name=".forcardiopulmonaryresuscitation"
+            android:name=".Forcardiopulmonaryresuscitation"
             android:exported="false" />
         <activity
-            android:name=".poisoningcases"
+            android:name=".Poisoningcases"
             android:exported="false" />
         <activity
-            android:name=".burns"
+            android:name=".Burns"
             android:exported="false" />
         <activity
-            android:name=".woundss"
+            android:name=".Woundss"
             android:exported="false" />
         <activity
-            android:name=".home"
+            android:name=".Home"
             android:exported="false"
             android:label="Home" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

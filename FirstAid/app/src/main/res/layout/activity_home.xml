@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".home">
+    tools:context=".Home">
 
 
     <TextView
@@ -69,7 +69,8 @@
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157" />
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -179,7 +180,8 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
 
-                    android:src="@drawable/poison" />
+                    android:src="@drawable/poison"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -290,7 +292,8 @@
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
-                    android:src="@drawable/burn" />
+                    android:src="@drawable/burn"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:layout_width="match_parent"

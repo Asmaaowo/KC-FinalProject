@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class choking extends AppCompatActivity {
+public class Choking extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,8 +1,9 @@
 package com.example.firstaid;
 
-public class stepwoundsone {
+public class Hmm {
     private String steps;
     private int numstep;
+    private int stepphoto;
 
     public String getSteps() {
         return steps;
@@ -28,9 +29,7 @@ public class stepwoundsone {
         this.stepphoto = stepphoto;
     }
 
-    private int stepphoto;
-
-    public stepwoundsone(String steps, int numstep, int stepphoto) {
+    public Hmm(String steps, int numstep, int stepphoto) {
         this.steps = steps;
         this.numstep = numstep;
         this.stepphoto = stepphoto;

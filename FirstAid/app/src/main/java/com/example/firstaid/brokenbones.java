@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class brokenbones extends AppCompatActivity {
+public class Brokenbones extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
