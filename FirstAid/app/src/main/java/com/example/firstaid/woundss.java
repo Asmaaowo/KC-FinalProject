@@ -16,11 +16,11 @@ public class Woundss extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_woundss);
         getSupportActionBar().hide();
-        //Button bleednose = findViewById(R.id.bleednose);
+        RelativeLayout bleednose = findViewById(R.id.bleednose);
         RelativeLayout brises = findViewById(R.id.bruises);
-        //RelativeLayout woandsi = findViewById(R.id.woundsss);
+        RelativeLayout woandsi = findViewById(R.id.woundsss);
 
-        brises.setOnClickListener(new View.OnClickListener() {
+        bleednose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentt = new Intent(Woundss.this, MainActivity2.class);
@@ -28,6 +28,20 @@ public class Woundss extends AppCompatActivity {
             }
         });
 
+        woandsi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Woundss.this, jroh.class);
+                startActivity(intentt);
+            }
+        });
+        brises.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Woundss.this, kdmat.class);
+                startActivity(intentt);
+            }
+        });
 
 
     }

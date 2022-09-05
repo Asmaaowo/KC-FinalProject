@@ -11,14 +11,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
     ArrayList<Hmm> stepArrayList = new ArrayList<Hmm>();
     int currentstep = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main3);
         getSupportActionBar().hide();
 
         Button button = findViewById(R.id.button3);
@@ -64,5 +64,6 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
     }
+
 
 }

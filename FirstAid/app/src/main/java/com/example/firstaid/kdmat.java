@@ -11,14 +11,14 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Choking extends AppCompatActivity {
+public class kdmat extends AppCompatActivity {
     ArrayList<Hmm> stepArrayList = new ArrayList<Hmm>();
     int currentstep = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choking);
+        setContentView(R.layout.activity_kdmat);
         getSupportActionBar().hide();
 
         Button button = findViewById(R.id.button3);
@@ -27,19 +27,15 @@ public class Choking extends AppCompatActivity {
         TextView numbe = findViewById(R.id.textView8);
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("الوقوف خلف الشخص المصاب." +
-                "ووضع إحدى القدمين أمام الأخرى قليلاً لتحقيق التوازن.",1,R.drawable.chokiing);
-        Hmm stepwoundstwo= new Hmm("لف الذراعين حول خصر الشخص المصاب و" +
-                "إمالة الشخص المصاب إلى الأمام قليلاً.",2,R.drawable.iiiiiiiiiiiii);
-        Hmm stepwoundsthreee = new Hmm("عمل قبضة باليد الأُخرى ثم وضعها فوق منطقة السرة." , 3,R.drawable.iiiiiiiiiiiii);
-        Hmm stepwoundsthree = new Hmm("مسك القبضة باليد الأُخرى ثم توجيه ضغطة بقوة على البطن بسرعة نحو الأعلى. ",4,R.drawable.iiiiiiiiiiiii);
-        Hmm stepwoundsfour = new Hmm(" القيام بمعدل 6 إِلى 10 ضغطات بطنية حتى يزول الجسم العالق واذا كان الشخص مغمى عليه فقم بالانعاش الرئوي ",5,R.drawable.iiiiiiiiiiiii);
+        Hmm stepwoundsonee = new Hmm("فك الملابس الضاغطة" +
+                "حيث تعمل الملابس الضاغطة على عصر الأوعية الدموية فى موقع الإصابة, مما يشجع ظهور الكدمة.",1,R.drawable.takeoff);
+        Hmm stepwoundstwo= new Hmm("قم بوضع كمادات الثلج على المنطقة المصابة حيث يعمل على انقباض الاوعية الدموية" ,2,R.drawable.ice);
+        Hmm stepwoundsthreee = new Hmm("قم بإراحة العضو المصاب ورفعه عن مستوى القلب لتقليل تدفق الدم إلى موضعه فتقل فرصة حدوث الكدمات." , 3,R.drawable.sleep);
+
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
-        stepArrayList.add(stepwoundsthree);
-        stepArrayList.add(stepwoundsfour);
 
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());

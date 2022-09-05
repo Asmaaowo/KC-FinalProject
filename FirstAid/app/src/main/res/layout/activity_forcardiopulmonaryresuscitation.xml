@@ -1,96 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Forcardiopulmonaryresuscitation">
+    android:background="@drawable/backgroundd"
+    tools:context=".MainActivity2">
 
-    <LinearLayout
+
+    <ImageView
+        android:id="@+id/imageViewhehe"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577"
+        app:srcCompat="@drawable/theback" />
+
+    <TextView
+        android:id="@+id/stepsword"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:fontFamily="@font/ar"
+        android:text="dddddddddddddddddddddddddddddddddddddddddd"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/costombutton"
+        android:fontFamily="@font/ar"
+        android:padding="10dp"
+        android:text="التالي"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.162" />
 
-        <RelativeLayout
-            android:id="@+id/bleednose"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/theback">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/blood"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="نزيف الأنف"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/bruises"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/theback">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/bruises"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الكدمات"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/woundsss"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/theback">
-
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="match_parent"
-                android:padding="15dp"
-                android:src="@drawable/wound"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:fontFamily="@font/ar"
-                android:padding="25dp"
-                android:text="الجروح"
-                android:textSize="40sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-    </LinearLayout>
-
-</ScrollView>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+</androidx.constraintlayout.widget.ConstraintLayout>
