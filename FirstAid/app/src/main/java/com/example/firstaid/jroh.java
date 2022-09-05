@@ -25,29 +25,31 @@ public class jroh extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(jroh.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("قم بالجلوس في وضع قائم و قم بإحناء الرأس قليلاً للأمام حتى لا تقم ببلع الدم",1,R.drawable.step1);
-        Hmm stepwoundstwo= new Hmm("قم بالضغط على طرف أنفك اللين بأصبعي السبابة و الإبهام" +
-                " لمدة 5 دقائق متواصلة و قم بالتنفس من الفم ",2,R.drawable.twow);
-        Hmm stepwoundsthreee = new Hmm("وإذا لم يقف النزيف ، فعليك أن" +
-                " تبقى لمدة 10 دقائق حتى يقف النزيف", 3,R.drawable.twow);
-        Hmm stepwoundsthree = new Hmm("حاول أن لا تقم بالتمخط أو تنظيف الأنف " +
-                "لمدة 12 ساعة بعد إيقاف النزف" +
-                " حتى لا يعود النزيف مرة ثانية.",4,R.drawable.three);
-        Hmm stepwoundsfour = new Hmm(" قم بوضع كمادات باردة أو قطعة من الثلج " +
-                "على أعلى أنفك و ذلك لأن الماء البارد " +
-                "يعمل على تضييق الأوعية الدموية و إيقاف النزف",5,R.drawable.ice);
-        Hmm stepwoundsfive = new Hmm("تجنب التدخين والجلوس في  أماكن المخصصة للتدخين", 6,R.drawable.nosmoking);
-        Hmm stepwoundssix = new Hmm("قم بالتحدث مع طبيبك عن نزيف الأنف  في حالة تكرارها أكثر من مرة في الإسبوع، حتى ولو تم توقفها بسهوله ، من المهم تشخيص  سبب نزيف الأنف المتكرر.",7,R.drawable.medicalcheckup);
+        Hmm stepwoundsonee = new Hmm("غسل اليدين جيدًا بالماء النظيف، والصابون قبل التعامل مع الجرح، مع تجنب لمسه بالأصابع في أثناء معالجته إن أمكن.",1,R.drawable.wash);
+        Hmm stepwoundstwo= new Hmm("إزالة المجوهرات من الجزء المصاب بالجسم.",2,R.drawable.diamond);
+        Hmm stepwoundsthreee = new Hmm("الضغط المباشر على الجرح؛ لوقف النزيف، مع تجنب ربط ما حول موضع الجرح؛ حيث يمكن أن يؤدي ذلك إلى حدوث تلف بالأنسجة." , 3,R.drawable.aaaaaaa);
+        Hmm stepwoundsthree = new Hmm("تنظيف الجرح بعد توقف النزيف، وذلك باستخدام محلول ملحي إن أمكن، وإذا لم يكن متاحًا، فيمكن استخدام مياه الشرب المعبأة." ,4,R.drawable.ssssss);
+        Hmm stepwoundstw2o= new Hmm("فحص الجرح، وإزالة أي تلوث، أو جسم غريب بداخله.",5,R.drawable.pppp);
+        Hmm stepwoundstww2o= new Hmm("تغطية الجرح بضمادة نظيفة معقمة، أما إذا كان الجرح ملوثًا، أو كان بسبب العض، مثل عضة الكلب، أو كان بسبب إبرة ملوثة فيجب تركه مفتوحًا.",6,R.drawable.lll);
+        Hmm stepwoundstw2= new Hmm("تناول المسكنات مثل: الإيبوبروفين؛ لتسكين الألم، وتغيير الضمادة كل 24 ساعة.",7,R.drawable.medicines);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
         stepArrayList.add(stepwoundsthree);
-        stepArrayList.add(stepwoundsfour);
-        stepArrayList.add(stepwoundsfive);
-        stepArrayList.add(stepwoundssix);
+        stepArrayList.add(stepwoundstw2o);
+        stepArrayList.add(stepwoundstww2o);
+        stepArrayList.add(stepwoundstw2);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());
@@ -64,5 +66,6 @@ public class jroh extends AppCompatActivity {
             }
         });
     }
+
 
 }

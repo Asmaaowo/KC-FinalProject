@@ -25,10 +25,17 @@ public class Choking extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Choking.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("الوقوف خلف الشخص المصاب." +
-                "ووضع إحدى القدمين أمام الأخرى قليلاً لتحقيق التوازن.",1,R.drawable.chokiing);
+        Hmm stepwoundsonee = new Hmm("الوقوف خلف الشخص المصاب ووضع إحدى القدمين أمام الأخرى قليلاً لتحقيق التوازن." ,1,R.drawable.chokiing);
         Hmm stepwoundstwo= new Hmm("لف الذراعين حول خصر الشخص المصاب و" +
                 "إمالة الشخص المصاب إلى الأمام قليلاً.",2,R.drawable.iiiiiiiiiiiii);
         Hmm stepwoundsthreee = new Hmm("عمل قبضة باليد الأُخرى ثم وضعها فوق منطقة السرة." , 3,R.drawable.iiiiiiiiiiiii);
@@ -53,6 +60,11 @@ public class Choking extends AppCompatActivity {
                 image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
                 steps.setText(stepArrayList.get(currentstep).getSteps());
                 numbe.setText(String.valueOf(stepArrayList.get(currentstep).getNumstep()));
+
+                if(stepArrayList.size() == currentstep){
+                    Intent i = new Intent(Choking.this, Home.class);
+                    startActivity(i);
+                }
 
             }
         });

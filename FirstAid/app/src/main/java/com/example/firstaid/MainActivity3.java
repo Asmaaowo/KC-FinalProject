@@ -25,6 +25,14 @@ public class MainActivity3 extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(MainActivity3.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
         Hmm stepwoundsonee = new Hmm("اذا كان يوجد نزيف فقم بإيقاف النزيف عن طريق الضغط الخفيف على الجرح بضمادة معقمة أو قطعة قماش نظيفة، حتى يتوقف النزف.",1,R.drawable.bandage);

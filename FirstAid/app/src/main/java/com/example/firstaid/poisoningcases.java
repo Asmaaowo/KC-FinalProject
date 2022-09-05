@@ -25,6 +25,14 @@ public class Poisoningcases extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Poisoningcases.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
         Hmm stepwoundsonee = new Hmm("تبدأ الإسعافات الأولية للتسمم الغذائي بإزالة الأطعمة الملوثة إن كانت ما زالت في فم الطفل أو المصاب", 1, R.drawable.mouth);
@@ -58,5 +66,6 @@ public class Poisoningcases extends AppCompatActivity {
 
             }
         });
+
     }
 }

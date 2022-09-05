@@ -25,6 +25,14 @@ public class kdmat extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(kdmat.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
         Hmm stepwoundsonee = new Hmm("فك الملابس الضاغطة" +

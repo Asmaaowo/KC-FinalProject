@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 public class Brokenbones extends AppCompatActivity {
@@ -17,6 +18,14 @@ public class Brokenbones extends AppCompatActivity {
 
         RelativeLayout firstbreak = findViewById(R.id.firstbreak);
         RelativeLayout second = findViewById(R.id.secondbreak);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Brokenbones.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         firstbreak.setOnClickListener(new View.OnClickListener() {
             @Override

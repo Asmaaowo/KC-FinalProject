@@ -25,6 +25,14 @@ public class Burns extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(Burns.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
         Hmm stepwoundsonee = new Hmm("وضع الجزء المصاب تحت الماء البارد الجاري او تغطيسه في ماء بارد حوال 10 دقائق او اكثر حسب المنطقة المصابة.", 1, R.drawable.wash);
@@ -58,5 +66,7 @@ public class Burns extends AppCompatActivity {
 
             }
         });
+
+
     }
 }
