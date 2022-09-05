@@ -27,27 +27,18 @@ public class MainActivity3 extends AppCompatActivity {
         TextView numbe = findViewById(R.id.textView8);
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("قم بالجلوس في وضع قائم و قم بإحناء الرأس قليلاً للأمام حتى لا تقم ببلع الدم",1,R.drawable.step1);
-        Hmm stepwoundstwo= new Hmm("قم بالضغط على طرف أنفك اللين بأصبعي السبابة و الإبهام" +
-                " لمدة 5 دقائق متواصلة و قم بالتنفس من الفم ",2,R.drawable.twow);
-        Hmm stepwoundsthreee = new Hmm("وإذا لم يقف النزيف ، فعليك أن" +
-                " تبقى لمدة 10 دقائق حتى يقف النزيف", 3,R.drawable.twow);
-        Hmm stepwoundsthree = new Hmm("حاول أن لا تقم بالتمخط أو تنظيف الأنف " +
-                "لمدة 12 ساعة بعد إيقاف النزف" +
-                " حتى لا يعود النزيف مرة ثانية.",4,R.drawable.three);
-        Hmm stepwoundsfour = new Hmm(" قم بوضع كمادات باردة أو قطعة من الثلج " +
-                "على أعلى أنفك و ذلك لأن الماء البارد " +
-                "يعمل على تضييق الأوعية الدموية و إيقاف النزف",5,R.drawable.ice);
-        Hmm stepwoundsfive = new Hmm("تجنب التدخين والجلوس في  أماكن المخصصة للتدخين", 6,R.drawable.nosmoking);
-        Hmm stepwoundssix = new Hmm("قم بالتحدث مع طبيبك عن نزيف الأنف  في حالة تكرارها أكثر من مرة في الإسبوع، حتى ولو تم توقفها بسهوله ، من المهم تشخيص  سبب نزيف الأنف المتكرر.",7,R.drawable.medicalcheckup);
+        Hmm stepwoundsonee = new Hmm("اذا كان يوجد نزيف فقم بإيقاف النزيف عن طريق الضغط الخفيف على الجرح بضمادة معقمة أو قطعة قماش نظيفة، حتى يتوقف النزف.",1,R.drawable.bandage);
+        Hmm stepwoundstwo= new Hmm("يمكن القيام بتثبيت المنطقة المصابة باستخدام الجبائر، أو حمالات الذراع، أو الألواح الخشبية إذا كان الشخص المُسعف مدربًا على ذلك.",2,R.drawable.bsdsd);
+        Hmm stepwoundsthreee = new Hmm("أما في حال عدم أهلية الشخص لأداء هذا الإجراء فيجدر به عدم تحريك المصاب، وعدم المحاولة في إعادة تنظيم العظم أو دفع العظم البارز." , 3,R.drawable.donttouch);
+        Hmm stepwoundsthree = new Hmm("يمكن أن يساعد تطبيق كمادات الثلج في تقليل التورم وتخفيف الألم." ,4,R.drawable.ice);
+        Hmm stepwoundsfour = new Hmm("يمكن معالجة المصاب من الصدمة عن طريق طمأنته، ووضعه بوضعية مريحة، وتشجيعه على الهدوء والاسترخاء، وتغطيته ببطانية لتدفئته." ,5,R.drawable.friends);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
         stepArrayList.add(stepwoundsthree);
         stepArrayList.add(stepwoundsfour);
-        stepArrayList.add(stepwoundsfive);
-        stepArrayList.add(stepwoundssix);
+
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());
