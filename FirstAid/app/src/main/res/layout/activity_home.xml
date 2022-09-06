@@ -307,6 +307,77 @@
 
 
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutfin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/theback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginLeft="200dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintEnd_toStartOf="@id/layoutom"
+                app:layout_constraintTop_toBottomOf="@id/layoutio"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/dizziness" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ar"
+                    android:gravity="center"
+                    android:text="الدوخة المفاجئة"
+                    android:textColor="#48304C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutidk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/theback"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintStart_toEndOf="@id/layoutfin"
+                app:layout_constraintTop_toBottomOf="@id/layoutom"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/stress"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ar"
+                    android:gravity="center"
+                    android:text="الصداع"
+                    android:textColor="#48304C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

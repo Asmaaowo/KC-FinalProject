@@ -25,21 +25,24 @@ public class firstburn extends AppCompatActivity {
         TextView steps = findViewById(R.id.stepsword);
         ImageView image = findViewById(R.id.imageViewhehe);
         TextView numbe = findViewById(R.id.textView8);
+        ImageView imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentt = new Intent(firstburn.this, Home.class);
+                startActivity(intentt);
+            }
+        });
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("قم بالجلوس في وضع قائم و قم بإحناء الرأس قليلاً للأمام حتى لا تقم ببلع الدم",1,R.drawable.step1);
-        Hmm stepwoundstwo= new Hmm("قم بالضغط على طرف أنفك اللين بأصبعي السبابة و الإبهام" +
-                " لمدة 5 دقائق متواصلة و قم بالتنفس من الفم ",2,R.drawable.twow);
-        Hmm stepwoundsthreee = new Hmm("وإذا لم يقف النزيف ، فعليك أن" +
-                " تبقى لمدة 10 دقائق حتى يقف النزيف", 3,R.drawable.twow);
-        Hmm stepwoundsthree = new Hmm("حاول أن لا تقم بالتمخط أو تنظيف الأنف " +
-                "لمدة 12 ساعة بعد إيقاف النزف" +
-                " حتى لا يعود النزيف مرة ثانية.",4,R.drawable.three);
-        Hmm stepwoundsfour = new Hmm(" قم بوضع كمادات باردة أو قطعة من الثلج " +
-                "على أعلى أنفك و ذلك لأن الماء البارد " +
-                "يعمل على تضييق الأوعية الدموية و إيقاف النزف",5,R.drawable.ice);
-        Hmm stepwoundsfive = new Hmm("تجنب التدخين والجلوس في  أماكن المخصصة للتدخين", 6,R.drawable.nosmoking);
-        Hmm stepwoundssix = new Hmm("قم بالتحدث مع طبيبك عن نزيف الأنف  في حالة تكرارها أكثر من مرة في الإسبوع، حتى ولو تم توقفها بسهوله ، من المهم تشخيص  سبب نزيف الأنف المتكرر.",7,R.drawable.medicalcheckup);
+        Hmm stepwoundsonee = new Hmm("يجب جلوس المريض أو مساعدته على الاستلقاء.",1,R.drawable.step1);
+        Hmm stepwoundstwo= new Hmm("رفع قدمين المريض عن مستوى الجسم لإعادة تدفق الدم إلى الدماغ." ,2,R.drawable.sitt);
+        Hmm stepwoundsthreee = new Hmm("تجنب تغير وضعية المريض بشكل فجائي." , 3,R.drawable.decline);
+        Hmm stepwoundsthree = new Hmm("تجنب الضوء العالي بالقرب من المريض " ,4,R.drawable.photophobia);
+        Hmm stepwoundsfour = new Hmm(" قم بوضع كمادات باردة أو قطعة من الثلج " ,5,R.drawable.ice);
+        Hmm stepwoundsfive = new Hmm("في حال شعور المريض بالعطش يمكنك إعطاؤه الماء أو السوائل.", 6,R.drawable.waterottle);
+        Hmm stepwoundssix = new Hmm("تجنب وقوف المريض بشكل مفاجئ وخاصة في حال الإصابة بالصداع مع الدوخة. ",7,R.drawable.headache);
+        Hmm stepidk = new Hmm("اذا استمرت الحالة لأكثر من اسبوع قم بمراجعة طبيبك",8,R.drawable.medicalcheckup);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
@@ -48,6 +51,7 @@ public class firstburn extends AppCompatActivity {
         stepArrayList.add(stepwoundsfour);
         stepArrayList.add(stepwoundsfive);
         stepArrayList.add(stepwoundssix);
+        stepArrayList.add(stepidk);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());

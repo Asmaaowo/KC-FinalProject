@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.SearchView;
 
 public class Home extends AppCompatActivity {
 
@@ -34,6 +35,26 @@ public class Home extends AppCompatActivity {
         LinearLayout poison = findViewById(R.id.layoutum);
         LinearLayout forcaa = findViewById(R.id.layoufour);
         LinearLayout broken = findViewById(R.id.layoutom);
+        LinearLayout fin = findViewById(R.id.layoutfin);
+        LinearLayout idk = findViewById(R.id.layoutidk);
+
+        idk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, secondburn.class);
+                startActivity(intent);
+            }
+        });
+
+        fin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, firstburn.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         wounds.setOnClickListener(new View.OnClickListener() {
             @Override

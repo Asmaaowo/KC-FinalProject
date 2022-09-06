@@ -35,7 +35,7 @@ public class kdmat extends AppCompatActivity {
         });
 
         Intent intent = new Intent();
-        Hmm stepwoundsonee = new Hmm("فك الملابس الضاغطة" +
+        Hmm stepwoundsonee = new Hmm("فك الملابس الضاغطة " +
                 "حيث تعمل الملابس الضاغطة على عصر الأوعية الدموية فى موقع الإصابة, مما يشجع ظهور الكدمة.",1,R.drawable.takeoff);
         Hmm stepwoundstwo= new Hmm("قم بوضع كمادات الثلج على المنطقة المصابة حيث يعمل على انقباض الاوعية الدموية" ,2,R.drawable.ice);
         Hmm stepwoundsthreee = new Hmm("قم بإراحة العضو المصاب ورفعه عن مستوى القلب لتقليل تدفق الدم إلى موضعه فتقل فرصة حدوث الكدمات." , 3,R.drawable.sleep);
