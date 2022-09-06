@@ -41,7 +41,8 @@ public class Choking extends AppCompatActivity {
         Hmm stepwoundsthreee = new Hmm("عمل قبضة باليد الأُخرى ثم وضعها فوق منطقة السرة." , 3,R.drawable.iiiiiiiiiiiii);
         Hmm stepwoundsthree = new Hmm("مسك القبضة باليد الأُخرى ثم توجيه ضغطة بقوة على البطن بسرعة نحو الأعلى. ",4,R.drawable.iiiiiiiiiiiii);
         Hmm stepwoundsfour = new Hmm(" القيام بمعدل 6 إِلى 10 ضغطات بطنية حتى يزول الجسم العالق واذا كان الشخص مغمى عليه فقم بالانعاش الرئوي ",5,R.drawable.iiiiiiiiiiiii);
-
+        Hmm done = new Hmm("انتهى.",6,R.drawable.done);
+        stepArrayList.add(done);
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);

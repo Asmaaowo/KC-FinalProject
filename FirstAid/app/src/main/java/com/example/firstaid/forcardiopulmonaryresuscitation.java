@@ -51,6 +51,8 @@ public class Forcardiopulmonaryresuscitation extends AppCompatActivity {
         Hmm ste = new Hmm("ضع أسفل باطن كفك (كعب يدك) على النصف السفلي من عظم القص في منتصف صدر الشخص، ثم ضع يدك الأخرى فوق اليد الأولى وشبك أصابعك",11,R.drawable.firsttt);
         Hmm dd = new Hmm("باستخدام وزن جسمك (وليس ذراعيك فقط)، ومع المحافظة على استقامة ذراعيك، اضغط على الصدر مباشرة لأسفل بمقدار ثلث عمق الصدر.",12, R.drawable.firsttt);
         Hmm d = new Hmm("أزل الضغط عن الصدر، واسمح للصدر بالعودة إلى وضعه الأصلي وانتظر الاسعاف حتى يأتي",13,R.drawable.firsttt);
+        Hmm done = new Hmm("انتهى.",14,R.drawable.done);
+        stepArrayList.add(done);
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);

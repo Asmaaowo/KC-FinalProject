@@ -39,6 +39,8 @@ public class kdmat extends AppCompatActivity {
                 "حيث تعمل الملابس الضاغطة على عصر الأوعية الدموية فى موقع الإصابة, مما يشجع ظهور الكدمة.",1,R.drawable.takeoff);
         Hmm stepwoundstwo= new Hmm("قم بوضع كمادات الثلج على المنطقة المصابة حيث يعمل على انقباض الاوعية الدموية" ,2,R.drawable.ice);
         Hmm stepwoundsthreee = new Hmm("قم بإراحة العضو المصاب ورفعه عن مستوى القلب لتقليل تدفق الدم إلى موضعه فتقل فرصة حدوث الكدمات." , 3,R.drawable.sleep);
+        Hmm done = new Hmm("انتهى.",4,R.drawable.done);
+        stepArrayList.add(done);
 
 
         stepArrayList.add(stepwoundsonee);

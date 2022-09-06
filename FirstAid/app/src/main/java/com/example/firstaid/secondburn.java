@@ -39,6 +39,8 @@ public class secondburn extends AppCompatActivity {
         Hmm stepwoundstwo= new Hmm("قد تؤدي الأضواء الساطعة (على سبيل المثال ، من شاشة الهاتف أو المكتب) إلى تفاقم الصداع أو الصداع النصفي." ,2,R.drawable.nophone);
         Hmm stepwoundsthreee = new Hmm("إذا كان الشخص المصاب بأي من الحالتين حساسًا للضوء ، فيجب عليه الجلوس أو الاستلقاء في غرفة مظلمة أو مضاءة بشكل خافت لزيادة الراحة وتقليل الألم." , 3,R.drawable.bed);
         Hmm stepwoundsthree = new Hmm("يجب أن يحصل الأشخاص المصابون بالصداع على هواء نقي ونوم كافٍ وشرب الماء بانتظام.  " ,4,R.drawable.rest);
+        Hmm done = new Hmm("انتهى.",5,R.drawable.done);
+        stepArrayList.add(done);
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);

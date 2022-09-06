@@ -41,7 +41,9 @@ public class Poisoningcases extends AppCompatActivity {
         Hmm stepwoundsthree = new Hmm("استخدام محلول الجفاف الفموي في بعض الحالات، مثل: الأطفال، وكبار السن وعند وجود أمراض تستدعي ذلك.", 4, R.drawable.syrup);
         Hmm stepwoundsfour = new Hmm("يجب تجنب الأطعمة الصلبة والتركيز على الطرية بعد أن يخف القيء، مثل: الموز، والأرز، والبسكويت، والخبز.", 5, R.drawable.iiiiiiiiiiiii);
         Hmm stepwoundso = new Hmm("الابتعاد كليًا في هذه الحالات عن المشروبات الغازية والكحول." , 6, R.drawable.decline);
-        Hmm stepwoundsp = new Hmm("يجب اللجوء للطوارئ في حال زادت أعراض القيء والإسهال خصوصًا عند الأطفال وكبار السن." , 6, R.drawable.help);
+        Hmm stepwoundsp = new Hmm("يجب اللجوء للطوارئ في حال زادت أعراض القيء والإسهال خصوصًا عند الأطفال وكبار السن." , 7, R.drawable.help);
+        Hmm done = new Hmm("انتهى.",8,R.drawable.done);
+        stepArrayList.add(done);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);

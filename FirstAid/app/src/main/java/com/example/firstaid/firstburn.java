@@ -43,6 +43,8 @@ public class firstburn extends AppCompatActivity {
         Hmm stepwoundsfive = new Hmm("في حال شعور المريض بالعطش يمكنك إعطاؤه الماء أو السوائل.", 6,R.drawable.waterottle);
         Hmm stepwoundssix = new Hmm("تجنب وقوف المريض بشكل مفاجئ وخاصة في حال الإصابة بالصداع مع الدوخة. ",7,R.drawable.headache);
         Hmm stepidk = new Hmm("اذا استمرت الحالة لأكثر من اسبوع قم بمراجعة طبيبك",8,R.drawable.medicalcheckup);
+        Hmm done = new Hmm("انتهى.",9,R.drawable.done);
+        stepArrayList.add(done);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);

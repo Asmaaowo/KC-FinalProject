@@ -48,6 +48,8 @@ public class MainActivity2 extends AppCompatActivity {
                 "يعمل على تضييق الأوعية الدموية و إيقاف النزف",5,R.drawable.ice);
         Hmm stepwoundsfive = new Hmm("تجنب التدخين والجلوس في  أماكن المخصصة للتدخين", 6,R.drawable.nosmoking);
         Hmm stepwoundssix = new Hmm("قم بالتحدث مع طبيبك عن نزيف الأنف  في حالة تكرارها أكثر من مرة في الإسبوع، حتى ولو تم توقفها بسهوله ، من المهم تشخيص  سبب نزيف الأنف المتكرر.",7,R.drawable.medicalcheckup);
+        Hmm done = new Hmm("انتهى.",8,R.drawable.done);
+        stepArrayList.add(done);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);

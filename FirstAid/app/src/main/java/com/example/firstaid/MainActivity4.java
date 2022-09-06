@@ -39,6 +39,8 @@ public class MainActivity4 extends AppCompatActivity {
         Hmm stepwoundstwo= new Hmm(" يجب الحرص في التعامل مع الشخص الذي سقط، وعدم تحريك مختلف أعضاء الجسم.",2,R.drawable.donttouch);
         Hmm stepwoundsthreee = new Hmm("لا يجب القيام بدور الطبيب ومحاولة إعادة العظم لمكانها حتى لا تتفاقم المشكلة، فما عليك فعله هو تثبيت الأماكن التي يتألم منها الشخص وعدم تحريكه إلا خلال وجود الطبيب المختص." , 3,R.drawable.donttouch);
         Hmm stepwoundsthree = new Hmm("لا تقم باستعمال الجزء المكسور كالمشي عليه او ايا كان." ,4,R.drawable.walk);
+        Hmm done = new Hmm("انتهى.",5,R.drawable.done);
+        stepArrayList.add(done);
 
 
         stepArrayList.add(stepwoundsonee);

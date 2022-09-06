@@ -42,6 +42,8 @@ public class jroh extends AppCompatActivity {
         Hmm stepwoundstw2o= new Hmm("فحص الجرح، وإزالة أي تلوث، أو جسم غريب بداخله.",5,R.drawable.pppp);
         Hmm stepwoundstww2o= new Hmm("تغطية الجرح بضمادة نظيفة معقمة، أما إذا كان الجرح ملوثًا، أو كان بسبب العض، مثل عضة الكلب، أو كان بسبب إبرة ملوثة فيجب تركه مفتوحًا.",6,R.drawable.lll);
         Hmm stepwoundstw2= new Hmm("تناول المسكنات مثل: الإيبوبروفين؛ لتسكين الألم، وتغيير الضمادة كل 24 ساعة.",7,R.drawable.medicines);
+        Hmm done = new Hmm("انتهى.",8,R.drawable.done);
+        stepArrayList.add(done);
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
