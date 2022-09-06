@@ -36,7 +36,7 @@ public class firstburn extends AppCompatActivity {
 
         Intent intent = new Intent();
         Hmm stepwoundsonee = new Hmm("يجب جلوس المريض أو مساعدته على الاستلقاء.",1,R.drawable.sitt);
-        Hmm stepwoundstwo= new Hmm("رفع قدمين المريض عن مستوى الجسم لإعادة تدفق الدم إلى الدماغ." ,2,R.drawable.sitt);
+        Hmm stepwoundstwo= new Hmm("رفع قدمين المريض عن مستوى الجسم لإعادة تدفق الدم إلى الدماغ." ,2,R.drawable.LEGS);
         Hmm stepwoundsthreee = new Hmm("تجنب تغير وضعية المريض بشكل مفاجئ." , 3,R.drawable.decline);
         Hmm stepwoundsthree = new Hmm("تجنب الضوء العالي بالقرب من المريض " ,4,R.drawable.photophobia);
         Hmm stepwoundsfour = new Hmm(" قم بوضع كمادات باردة أو قطعة من الثلج " ,5,R.drawable.ice);
