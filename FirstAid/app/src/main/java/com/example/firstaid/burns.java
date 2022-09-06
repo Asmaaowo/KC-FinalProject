@@ -43,7 +43,7 @@ public class Burns extends AppCompatActivity {
         Hmm stepwoundso = new Hmm("وفي حال كانت الحروق قوية او تمتد لمساحات واسعة، من الافضل طلب المساعدة الطبية فورا." , 6, R.drawable.help);
         Hmm stepwoundsp = new Hmm("لا ينصح باستخدام الثلج او المراهم على المنطقة المصابة بالحرق تجنبا لالتهاب الجرح او اصابته بالالتهاب." , 7, R.drawable.decline);
         Hmm done = new Hmm("انتهى.",8,R.drawable.done);
-        stepArrayList.add(done);
+
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
@@ -51,7 +51,7 @@ public class Burns extends AppCompatActivity {
         stepArrayList.add(stepwoundsfour);
         stepArrayList.add(stepwoundso);
         stepArrayList.add(stepwoundsp);
-
+        stepArrayList.add(done);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());

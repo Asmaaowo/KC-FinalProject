@@ -40,14 +40,14 @@ public class MainActivity4 extends AppCompatActivity {
         Hmm stepwoundsthreee = new Hmm("لا يجب القيام بدور الطبيب ومحاولة إعادة العظم لمكانها حتى لا تتفاقم المشكلة، فما عليك فعله هو تثبيت الأماكن التي يتألم منها الشخص وعدم تحريكه إلا خلال وجود الطبيب المختص." , 3,R.drawable.donttouch);
         Hmm stepwoundsthree = new Hmm("لا تقم باستعمال الجزء المكسور كالمشي عليه او ايا كان." ,4,R.drawable.walk);
         Hmm done = new Hmm("انتهى.",5,R.drawable.done);
-        stepArrayList.add(done);
+
 
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
         stepArrayList.add(stepwoundsthree);
-
+        stepArrayList.add(done);
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());
         numbe.setText(String.valueOf(stepArrayList.get(currentstep).getNumstep()));

@@ -43,7 +43,7 @@ public class jroh extends AppCompatActivity {
         Hmm stepwoundstww2o= new Hmm("تغطية الجرح بضمادة نظيفة معقمة، أما إذا كان الجرح ملوثًا، أو كان بسبب العض، مثل عضة الكلب، أو كان بسبب إبرة ملوثة فيجب تركه مفتوحًا.",6,R.drawable.lll);
         Hmm stepwoundstw2= new Hmm("تناول المسكنات مثل: الإيبوبروفين؛ لتسكين الألم، وتغيير الضمادة كل 24 ساعة.",7,R.drawable.medicines);
         Hmm done = new Hmm("انتهى.",8,R.drawable.done);
-        stepArrayList.add(done);
+
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
@@ -52,7 +52,7 @@ public class jroh extends AppCompatActivity {
         stepArrayList.add(stepwoundstw2o);
         stepArrayList.add(stepwoundstww2o);
         stepArrayList.add(stepwoundstw2);
-
+        stepArrayList.add(done);
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());
         numbe.setText(String.valueOf(stepArrayList.get(currentstep).getNumstep()));

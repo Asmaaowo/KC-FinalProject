@@ -40,13 +40,13 @@ public class kdmat extends AppCompatActivity {
         Hmm stepwoundstwo= new Hmm("قم بوضع كمادات الثلج على المنطقة المصابة حيث يعمل على انقباض الاوعية الدموية" ,2,R.drawable.ice);
         Hmm stepwoundsthreee = new Hmm("قم بإراحة العضو المصاب ورفعه عن مستوى القلب لتقليل تدفق الدم إلى موضعه فتقل فرصة حدوث الكدمات." , 3,R.drawable.sleep);
         Hmm done = new Hmm("انتهى.",4,R.drawable.done);
-        stepArrayList.add(done);
+
 
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
-
+        stepArrayList.add(done);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());

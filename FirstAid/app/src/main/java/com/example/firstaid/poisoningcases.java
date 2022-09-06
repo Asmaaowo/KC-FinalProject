@@ -43,7 +43,7 @@ public class Poisoningcases extends AppCompatActivity {
         Hmm stepwoundso = new Hmm("الابتعاد كليًا في هذه الحالات عن المشروبات الغازية والكحول." , 6, R.drawable.decline);
         Hmm stepwoundsp = new Hmm("يجب اللجوء للطوارئ في حال زادت أعراض القيء والإسهال خصوصًا عند الأطفال وكبار السن." , 7, R.drawable.help);
         Hmm done = new Hmm("انتهى.",8,R.drawable.done);
-        stepArrayList.add(done);
+
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
@@ -52,7 +52,7 @@ public class Poisoningcases extends AppCompatActivity {
         stepArrayList.add(stepwoundsfour);
         stepArrayList.add(stepwoundso);
         stepArrayList.add(stepwoundsp);
-
+        stepArrayList.add(done);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());

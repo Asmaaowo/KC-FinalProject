@@ -41,14 +41,14 @@ public class MainActivity3 extends AppCompatActivity {
         Hmm stepwoundsthree = new Hmm("يمكن أن يساعد تطبيق كمادات الثلج في تقليل التورم وتخفيف الألم." ,4,R.drawable.ice);
         Hmm stepwoundsfour = new Hmm("يمكن معالجة المصاب من الصدمة عن طريق طمأنته، ووضعه بوضعية مريحة، وتشجيعه على الهدوء والاسترخاء، وتغطيته ببطانية لتدفئته." ,5,R.drawable.friends);
         Hmm done = new Hmm("انتهى.",6,R.drawable.done);
-        stepArrayList.add(done);
+
 
         stepArrayList.add(stepwoundsonee);
         stepArrayList.add(stepwoundstwo);
         stepArrayList.add(stepwoundsthreee);
         stepArrayList.add(stepwoundsthree);
         stepArrayList.add(stepwoundsfour);
-
+        stepArrayList.add(done);
 
         image.setImageResource(stepArrayList.get(currentstep).getStepphoto());
         steps.setText(stepArrayList.get(currentstep).getSteps());
