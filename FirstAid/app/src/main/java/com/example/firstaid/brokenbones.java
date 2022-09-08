@@ -19,13 +19,7 @@ public class Brokenbones extends AppCompatActivity {
         RelativeLayout firstbreak = findViewById(R.id.firstbreak);
         RelativeLayout second = findViewById(R.id.secondbreak);
         ImageView imageView = findViewById(R.id.imageView);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentt = new Intent(Brokenbones.this, Home.class);
-                startActivity(intentt);
-            }
-        });
+
 
         firstbreak.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,5 +36,6 @@ public class Brokenbones extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        
     }
 }
